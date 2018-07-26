@@ -2,14 +2,14 @@ set nocompatible			" required
 filetype off				" required
 
 set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
 
+call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'python-mode/python-mode'
 Plugin 'davidhalter/jedi-vim'
-
 call vundle#end()			" required
-filetype plugin indent on	" required
+
+filetype plugin indent on		" required
 
 set foldmethod=indent
 set foldlevel=99
@@ -25,3 +25,5 @@ let g:pymode_rope = 0
 autocmd FileType python set autoindent
 au BufRead,BufNewFile *.py set tabstop=4
 au BufRead,BufNewFile *.py set textwidth=79
+
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
