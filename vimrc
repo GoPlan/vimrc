@@ -4,7 +4,6 @@ filetype off				" required
 set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()
-Plugin 'gmarik/Vundle.vim'
 Plugin 'python-mode/python-mode'
 Plugin 'davidhalter/jedi-vim'
 call vundle#end()			" required
